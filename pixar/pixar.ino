@@ -27,10 +27,10 @@ void loop()
   
   delay(100);
   
-  if(results.value == 16753245){
+  if(results.value == 4129172055){
     digitalWrite(porta_rele,HIGH);
     }
-  if(results.value == 16769565){
+  if(results.value == 1849971288){
     digitalWrite(porta_rele,LOW);
     }
  
