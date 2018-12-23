@@ -34,7 +34,7 @@ void loop()
   cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
   Serial.print("CM: ");
   Serial.println(cmMsec);
-  delay(1500);
+  delay(1000);
    //Limpa a tela
   lcd.clear();
   //Posiciona o cursor na coluna 3, linha 0;
@@ -43,7 +43,7 @@ void loop()
   lcd.print(" Distancia: ");
   lcd.setCursor(3, 1);
   lcd.print(cmMsec);
-  delay(1500);
+  delay(1000);
   
   digitalWrite(led2,HIGH);
   if(cmMsec <= 60){

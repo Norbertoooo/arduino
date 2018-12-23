@@ -2,6 +2,7 @@
 #include <IRremote.h>
 #include <IRremoteInt.h>
 #include <ir_Lego_PF_BitStreamEncoder.h>
+
 //alterar nome
 int porta_rele = 12;
 int rec = 8;
@@ -29,7 +30,7 @@ void loop()
   if(results.value == 16753245){
     digitalWrite(porta_rele,HIGH);
     }
-  if(results.value != 16753245){
+  if(results.value == 16769565){
     digitalWrite(porta_rele,LOW);
     }
  
